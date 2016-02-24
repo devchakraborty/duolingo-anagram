@@ -1,0 +1,57 @@
+@import "reset";
+
+body {
+  background: rgb(230, 230, 230);
+}
+
+form#checker {
+  width: 300px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+  input, label {
+    display: block;
+    width: 300px;
+    padding: 0;
+    border: 0;
+    height: 30px;
+    line-height: 30px;
+    outline: none;
+    text-align: center;
+
+    font-family: "Nimbus Sans", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+
+    color: rgb(255, 255, 255);
+
+    &.correct {
+      background: rgb(51, 207, 141);
+    }
+
+    &.incorrect {
+      background: rgb(210, 75, 75);
+    }
+  }
+
+  input {
+    margin-bottom: 2px;
+    background: rgb(55, 55, 55);
+    color: rgb(230, 230, 230);
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  #word1 {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  #result {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}
